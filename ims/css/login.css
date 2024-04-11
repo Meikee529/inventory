@@ -1,0 +1,249 @@
+/* body {
+    background: url('../css/images/pink.png') no-repeat center;
+    background-size: cover;
+} */
+
+.load-bar{position:fixed;bottom:0;height:5px;width:100%}.load-bar-container{float:left;width:50%;height:100%;overflow:hidden}.load-bar .load-bar-container:last-child{float:right;-moz-transform-origin:top right;-ms-transform-origin:top right;-webkit-transform-origin:top right}.load-bar-base{float:left;width:100%;height:100%;overflow:hidden;position:relative;background:#159756}.color{width:100%;height:100%;float:left;position:absolute}.base1 .red{background:#da4733;-webkit-animation:move_left_red 4s infinite linear;-moz-animation:move_left_red 4s infinite linear;-ms-animation:move_left_red 4s infinite linear;animation:move_left_red 4s infinite linear}.base1 .blue{background:#3b78e7;-webkit-animation:move_left_blue 4s infinite linear;-moz-animation:move_left_blue 4s infinite linear;-ms-animation:move_left_blue 4s infinite linear;animation:move_left_blue 4s infinite linear}.base1 .yellow{background:#fdba2c;-webkit-animation:move_left_yellow 4s infinite linear;-moz-animation:move_left_yellow 4s infinite linear;-ms-animation:move_left_yellow 4s infinite linear;animation:move_left_yellow 4s infinite linear}.base1 .green{background:#159756;-webkit-animation:move_left_green 4s infinite linear;-moz-animation:move_left_green 4s infinite linear;-ms-animation:move_left_green 4s infinite linear;animation:move_left_green 4s infinite linear}@-webkit-keyframes move_left_red{0%{-webkit-transform:translateX(100%)}100%,25%,50%,75%{-webkit-transform:translateX(0%)}}@-moz-keyframes move_left_red{0%{-moz-transform:translateX(100%)}100%,25%,50%,75%{-moz-transform:translateX(0%)}}@-ms-keyframes move_left_red{0%{-ms-transform:translateX(100%)}100%,25%,50%,75%{-ms-transform:translateX(0%)}}@keyframes move_left_red{0%{transform:translateX(100%)}100%,25%,50%,75%{transform:translateX(0%)}}@-webkit-keyframes move_left_blue{0%,25%{-webkit-transform:translateX(100%)}100%,50%,75%{-webkit-transform:translateX(0%)}}@-moz-keyframes move_left_blue{0%,25%{-moz-transform:translateX(100%)}100%,50%,75%{-moz-transform:translateX(0%)}}@-ms-keyframes move_left_blue{0%,25%{-ms-transform:translateX(100%)}100%,50%,75%{-ms-transform:translateX(0%)}}@keyframes move_left_blue{0%,25%{transform:translateX(100%)}100%,50%,75%{transform:translateX(0%)}}@-webkit-keyframes move_left_yellow{0%,25%,50%{-webkit-transform:translateX(100%)}100%,75%{-webkit-transform:translateX(0%)}}@-moz-keyframes move_left_yellow{0%,25%,50%{-moz-transform:translateX(100%)}100%,75%{-moz-transform:translateX(0%)}}@-ms-keyframes move_left_yellow{0%,25%,50%{-ms-transform:translateX(100%)}100%,75%{-ms-transform:translateX(0%)}}@keyframes move_left_yellow{0%,25%,50%{transform:translateX(100%)}100%,75%{transform:translateX(0%)}}@-webkit-keyframes move_left_green{0%,25%,50%,75%{-webkit-transform:translateX(100%)}100%{-webkit-transform:translateX(0%)}}@-moz-keyframes move_left_green{0%,25%,50%,75%{-moz-transform:translateX(100%)}100%{-moz-transform:translateX(0%)}}@-ms-keyframes move_left_green{0%,25%,50%,75%{-ms-transform:translateX(100%)}100%{-ms-transform:translateX(0%)}}@keyframes move_left_green{0%,25%,50%,75%{transform:translateX(100%)}100%{transform:translateX(0%)}}.base2 .red{background:#da4733;-webkit-animation:move_right_red 4s infinite linear;-moz-animation:move_right_red 4s infinite linear;-ms-animation:move_right_red 4s infinite linear;animation:move_right_red 4s infinite linear}.base2 .blue{background:#3b78e7;-webkit-animation:move_right_blue 4s infinite linear;-moz-animation:move_right_blue 4s infinite linear;-ms-animation:move_right_blue 4s infinite linear;animation:move_right_blue 4s infinite linear}.base2 .yellow{background:#fdba2c;-webkit-animation:move_right_yellow 4s infinite linear;-moz-animation:move_right_yellow 4s infinite linear;-ms-animation:move_right_yellow 4s infinite linear;animation:move_right_yellow 4s infinite linear}.base2 .green{background:#159756;-webkit-animation:move_right_green 4s infinite linear;-moz-animation:move_right_green 4s infinite linear;-ms-animation:move_right_green 4s infinite linear;animation:move_right_green 4s infinite linear}@-webkit-keyframes move_right_red{0%{-webkit-transform:translateX(-100%)}100%,25%,50%,75%{-webkit-transform:translateX(0%)}}@-moz-keyframes move_right_red{0%{-moz-transform:translateX(-100%)}100%,25%,50%,75%{-moz-transform:translateX(0%)}}@-ms-keyframes move_right_red{0%{-ms-transform:translateX(-100%)}100%,25%,50%,75%{-ms-transform:translateX(0%)}}@keyframes move_right_red{0%{transform:translateX(-100%)}100%,25%,50%,75%{transform:translateX(0%)}}@-webkit-keyframes move_right_blue{0%,25%{-webkit-transform:translateX(-100%)}100%,50%,75%{-webkit-transform:translateX(0%)}}@-moz-keyframes move_right_blue{0%,25%{-moz-transform:translateX(-100%)}100%,50%,75%{-moz-transform:translateX(0%)}}@-ms-keyframes move_right_blue{0%,25%{-ms-transform:translateX(-100%)}100%,50%,75%{-ms-transform:translateX(0%)}}@keyframes move_right_blue{0%,25%{transform:translateX(-100%)}100%,50%,75%{transform:translateX(0%)}}@-webkit-keyframes move_right_yellow{0%,25%,50%{-webkit-transform:translateX(-100%)}100%,75%{-webkit-transform:translateX(0%)}}@-moz-keyframes move_right_yellow{0%,25%,50%{-moz-transform:translateX(-100%)}100%,75%{-moz-transform:translateX(0%)}}@-ms-keyframes move_right_yellow{0%,25%,50%{-ms-transform:translateX(-100%)}100%,75%{-ms-transform:translateX(0%)}}@keyframes move_right_yellow{0%,25%,50%{transform:translateX(-100%)}100%,75%{transform:translateX(0%)}}@-webkit-keyframes move_right_green{0%,25%,50%,75%{-webkit-transform:translateX(-100%)}100%{-webkit-transform:translateX(0%)}}@-moz-keyframes move_right_green{0%,25%,50%,75%{-moz-transform:translateX(-100%)}100%{-moz-transform:translateX(0%)}}@-ms-keyframes move_right_green{0%,25%,50%,75%{-ms-transform:translateX(-100%)}100%{-ms-transform:translateX(0%)}}@keyframes move_right_green{0%,25%,50%,75%{transform:translateX(-100%)}100%{transform:translateX(0%)}}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+body#loginBody {
+    background: linear-gradient(rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5)), url('../css/images/pinkpink.jpg') no-repeat center;
+    background-size: cover;
+    font-family: arial;
+}
+div.loginHeader {
+    text-align: center;
+}
+
+div.loginHeader {
+    margin-bottom: 60px;
+}
+
+div.loginHeader h1 {
+    font-size: 100px;
+    color: #f685a2;
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+
+div.loginHeader p {
+    color: #ffdae3;
+    font-size: 50px;
+    margin: 0;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+div.loginHeader p:after {
+    content: '';
+    display: block;
+    height: 5px;
+    background: #f685a2;
+    margin: 0 auto;
+}
+
+div.loginBody form {
+    margin: 0 auto;
+    width: 450px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    height: 270px;
+}
+
+div.loginInputsContainer {
+    margin-top: 30px;
+}
+
+div.loginInputsContainer label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+div.loginInputsContainer input {
+
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #d40339;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+div.loginButtonContainer {
+    margin: 40px;
+    text-align: center;
+}
+
+div.loginButtonContainer button{
+    margin: 30px;
+    background: #f685a2;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+div.header{
+    width: 100%;
+    height: 20px;
+    background: #f685a1;
+}
+
+body#banner {
+    background: linear-gradient(rgba(232, 175, 185, 0.5), rgba(255, 192, 203, 0.5)), url('../css/images/pinkpink.jpg') no-repeat center;
+    background-size: cover;
+    font-family: arial;
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+
+/* div.banner{
+    background: url('../css/images/pinkpink.jpg') no-repeat center fixed;
+    background-size: cover;
+    padding-top:100px;
+    padding-bottom: 100px;
+} */
+
+div.homepageContainer{
+    width:100%;
+    max-width:900px;
+    /* height: 800vh; */
+    margin:0 auto;
+    font-family: arial;
+}
+div.bannerTagline p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #411d26;
+}
+
+div.bannerHeader h1 {
+    font-size: 100px;
+    color: #9a445a;
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+
+div.bannerHeader p {
+    color: #7d3849;
+    font-size: 50px;
+    margin: 0;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* dashboard CSS design */
+#dashboardMainContainer{
+    display: flex;
+    flex-direction:row;
+    height: 100vh;
+}
+
+div.dashboard_sidebar {
+    width:20%;
+    background: #323232;
+    height:100vh; 
+}
+
+div.dashboard_content_container{
+    width:80%;
+    background: #f4f6f9;
+}
+
+h3.dashboard_logo{
+    color:#f685a1;
+    font-size:80px;
+    text-align:center;
+}
+
+div.dashboard_sidebar_user{
+    text-align:center;
+    position:relative;
+    padding-bottom:20px;
+    border-bottom:1px solif #fff;
+}
+
+div.dashboard_sidebar_user img{
+    width:80px;
+    display:inline-block;
+    border-radius:50%;
+    border:2px solid #f685a1;
+    margin-right:5px;
+    vertical-align: middle;
+}
+
+div.dashboard_sidebar_user span{
+    top:20%;
+    font-size:18px;
+    text-transform: uppercase;
+    width:60px;
+    display:inline-block;
+    color:#fff;
+}
+
+ul.dashboard_menu_lists{
+    margin-top:20px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+ul.dashboard_menu_lists li{
+    padding:15px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+ul.dashboard_menu_lists li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul.dashboard_menu_lists li a i{
+    font-size: 20px;
+}
+
+ul.dashboard_menu_lists li a.menuActive{
+    background: #f685a1;
+    color: #fff;
+}
+
+ul.dashboard_menu_lists li:hover{
+    background: #f685a1;
+    color: #fff;
+    transition: 0.3s all;
+}
+
+div.dashboard_topNav{
+    background: #fff;
+    padding: 20px;
+}
+
+div.dashboard_topNav a{
+    color: #848383;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a#logoutBtn{
+    float:right;
+}
+
+div.dashboard_sidebar_menus {
+    text-align: center;
+}

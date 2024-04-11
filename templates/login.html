@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Hardware Inventory</title>
+    <!-- Include Bootstrap CSS for styling the table -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Computer Hardware Inventory</h1>
+        
+        <label for="categorySelect">Select Category:</label>
+        <select id="categorySelect" onchange="filterTable()">
+            <option value="">All Categories</option>
+            <option value="CPU">CPU</option>
+            <option value="Video Card">Video Card</option>
+            <option value="Motherboard">Motherboard</option>
+            <option value="Storage">Storage</option>
+        </select>
+        <label for="searchInput">Search:</label>
+        <input type="text" id="searchInput" oninput="filterTable()" placeholder="Enter keyword">
+        
+        <table id="stockTable" class="table table-striped">
+            <tbody id="stockData">
+                {{ inventory_table | safe }}
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function filterTable() {
+            var keyword = document.getElementById('searchInput').value.trim().toLowerCase();
+            var rows = document.querySelectorAll('#stockData tr');
+
+            rows.forEach(function(row) {
+                var productCell = row.querySelector('td:nth-child(2)'); // Index 2 for PRODUCT_NAME
+                if (productCell) {
+                    var productText = productCell.textContent.trim().toLowerCase();
+                    if (productText.includes(keyword) || keyword === '') {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

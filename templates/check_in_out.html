@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check In/Check Out Inventory</title>
+    <!-- Include Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Check In/Check Out Inventory</h1>
+        
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" placeholder="Enter item name">
+        
+        <label for="actionSelect">Select Action:</label>
+        <select id="actionSelect">
+            <option value="checkin">Check In</option>
+            <option value="checkout">Check Out</option>
+        </select>
+        
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName" placeholder="Enter user name">
+        
+        <label for="details">Details:</label>
+        <textarea id="details" placeholder="Enter details"></textarea>
+        
+        <button onclick="recordAction()">Record Action</button>
+    </div>
+
+    <script>
+        function recordAction() {
+            var itemName = document.getElementById('itemName').value;
+            var action = document.getElementById('actionSelect').value;
+            var userName = document.getElementById('userName').value;
+            var details = document.getElementById('details').value;
+            var currentTime = new Date().toLocaleString();
+
+            // Perform further actions like storing the data in a database or updating inventory records
+            console.log("Item Name: " + itemName);
+            console.log("Action: " + action);
+            console.log("User Name: " + userName);
+            console.log("Details: " + details);
+            console.log("Time: " + currentTime);
+            
+            // You can make AJAX requests to send this data to the server for processing
+        }
+    </script>
+</body>
+</html>
